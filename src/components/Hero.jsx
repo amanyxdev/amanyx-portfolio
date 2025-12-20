@@ -6,6 +6,10 @@ import html from "../assets/html5.svg"
 import css from '../assets/css_old.svg'
 import js from '../assets/javascript.svg'
 import nodejs from '../assets/nodejs.svg'
+import linux from '../assets/linux.svg'
+import express from "../assets/Express.js_light.svg"
+import typescript from "../assets/typescript.svg"
+import postgres from "../assets/postgresql.svg"
 
 const Hero = () => {
     const mouseX = useMotionValue(0);
@@ -93,7 +97,11 @@ const Hero = () => {
                         { src: js, rot: "rotate-3" },
                         { src: html, rot: "-rotate-3" },
                         { src: css, rot: "rotate-1" },
-                        { src: nodejs, rot: "-rotate-1" }
+                        { src: nodejs, rot: "-rotate-1" },
+                        { src: linux, rot: "-rotate-3" },
+                        { src: express, rot: "rotate-2" },
+                        { src: typescript, rot: "-rotate-1" },
+                        { src: postgres, rot: "rotate-3" }
                     ].map((skill, index) => (
                         <motion.div
                             key={index}
