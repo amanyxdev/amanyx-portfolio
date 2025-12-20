@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import contactBg from '../assets/contact.jpg';
+import contactBg from '../assets/contact.webp';
 
 const Contact = () => {
     return (

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import projectBg from '../assets/project.jpg';
+import projectBg from '../assets/project.webp';
 import { projectsData } from '../data/projects';
 
 const ProjectCard = ({ title, description, tags, index, github, live, image }) => {
