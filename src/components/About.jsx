@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profileImg from "../assets/profile.avif"; // Assuming this is the profile image to use
+import profileImg from "../assets/profile-1.avif";
 
 const About = () => {
     return (
