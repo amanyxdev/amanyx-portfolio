@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useTransform } from 'framer-motion';
-import heroBg from '../assets/hero.webp';
+
 import reactIcon from '../assets/React_light.svg';
 import tailwindIcon from '../assets/tailwindcss.svg';
 import html from "../assets/html5.svg"
@@ -21,8 +21,7 @@ const Hero = () => {
         mouseY.set(clientY - window.innerHeight / 2);
     }
 
-    const bgX = useTransform(mouseX, (value) => value / 50);
-    const bgY = useTransform(mouseY, (value) => value / 50);
+
     const textX = useTransform(mouseX, (value) => value / -25);
     const textY = useTransform(mouseY, (value) => value / -25);
 
@@ -48,12 +47,9 @@ const Hero = () => {
             onMouseMove={handleMouseMove}
             className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-neutral-900 font-sans cursor-default"
         >
-            <motion.div
+            <div
                 style={{
-                    backgroundImage: `url(${heroBg})`,
-                    x: bgX,
-                    y: bgY,
-                    scale: 1.2
+                    backgroundImage: `url("https://cdn.jsdelivr.net/gh/Amandeep563/amanjs@main/src/assets/hero.webp")`,
                 }}
                 className="absolute inset-0 bg-cover bg-center"
             />
