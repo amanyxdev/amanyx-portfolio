@@ -31,7 +31,7 @@ const App = () => {
                 <Hero />
             </section>
 
-            <section id="about" className="relative">
+            <section id="about" className="relative w-full">
                 <About />
             </section>
 

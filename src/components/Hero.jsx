@@ -46,7 +46,7 @@ const Hero = () => {
     return (
         <section
             onMouseMove={handleMouseMove}
-            className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-slate-900 font-sans cursor-default"
+            className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-neutral-900 font-sans cursor-default"
         >
             <motion.div
                 style={{
@@ -114,7 +114,7 @@ const Hero = () => {
                 </motion.div>
             </motion.div>
 
-            <div className="absolute inset-0 bg-blue-900/10 pointer-events-none" />
+            <div className="absolute inset-0 bg-black/10 pointer-events-none" />
         </section>
     );
 };
